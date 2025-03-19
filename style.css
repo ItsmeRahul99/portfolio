@@ -856,11 +856,10 @@ button[type="submit"]:hover {
     .hero-text {
         h1 {
             font-size: 2rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1rem;
         }
         h1 span {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
             display: inline-block;
         }
         .name-wrapper .symbol:first-child {
@@ -886,7 +885,7 @@ button[type="submit"]:hover {
     }
 
     .hero-image {
-        max-width: 250px;
+        max-width: 225px;
         /* Smaller image for mobile */
         margin: 0 auto;
         /* Center the image */
