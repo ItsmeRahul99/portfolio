@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Patel - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <canvas id="canvas-bg"></canvas>
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">RP</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon"></i>
+        </button>
+    </header>
+
+    <!-- Social Links Sidebar -->
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/itsmerahul99/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ItsmeRahul99" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://x.com/ThisIs_rahul99" target="_blank"  aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+        </a>
+    </div>
+
+    <section id="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <!-- <h1>Hi, I'm <span>Rahul Patel</span></h1> -->
+                <h1>Hi, I'm <span class="name-wrapper"><span class="symbol">&gt;</span>Rahul Patel<span class="symbol">&lt;</span></span></h1>
+                <h2>Full Stack Developer</h2>
+                <p>Building digital experiences with modern web technologies.</p>
+                <div class="hero-buttons">
+                    <!-- <a href="#contact" class="cta-button">Get In Touch</a> -->
+                    <a target="_blank" href="https://drive.google.com/file/d/1aLMeky-DAZA1Xx_dIYqTkaqwVi1Tj99t/view"
+                        download class="cta-button cv-button">Download CV</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="rahul.webp" alt="Rahul Patel" class="profile-image">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about container">
+        <h2 class="section-title">About Me</h2>
+        <pre>A Senior Front End developer with experience in SCSS, HTML, and JavaScript. Worked on projects related to ReactJS, NextJS, Redux, and Webpack. A good team player and a quick learner. Can easily work in both individual and teamwork roles.
+
+        Web Technologies: HTML5/CSS, JavaScript(ES6), TypeScript, CSS Preprocessors 
+        Frameworks/Libraries: ReactJS, NextJS, Jest, RTL, Bootstrap, Material-UI, RestAPI, GraphQL, React Native, Node.js
+        Developer Tools: Git, VS Code, Visual Studio, XCode, Android Studio, React dev tools
+            
+        • Experience in creating Web Applications using JavaScript, HTML5, React, and CSS.
+        • Experience in creating hybrid applications in React Native framework and using High chart, Image comparison, and react native cameras with face detection.
+        • Experience in following Agile Methodologies.
+        • Participated in all the project requirements from requirement gathering to development and testing to deployment.
+        • Mentored fellow interns and assisted them to learn to abut front-end technologies.</pre>
+    </section>
+
+    <section id="skills" class="skills container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-redux"></i>
+                <h3>Redux</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-bootstrap"></i>
+                <h3>Bootstrap</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-github"></i>
+                <h3>Github</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-database"></i>
+                <h3>MySQL</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-node-js"></i>
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-figma"></i>
+                <h3>Figma</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-js-square"></i>
+                <h3>TypeScript</h3>
+            </div>
+            <div class="skill-item">
+                <i class="fab fa-css3"></i>
+                <h3>Tailwind CSS</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="https://source.unsplash.com/random/400x300?tech,1" alt="Project 1" class="project-image">
+                <h3>Project Title 1</h3>
+                <p>Dummy Text</p>
+            </div>
+            <div class="project-card">
+                <img src="https://source.unsplash.com/random/400x300?tech,2" alt="Project 2" class="project-image">
+                <h3>Project Title 2</h3>
+                <p>Dummy Text</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="contact" class="contact container">
+        <h2 class="section-title">Contact</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section> -->
+    <section id="contact" class="contact container">
+        <h2 class="section-title">Let's Get in Touch</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:rahul99.engineer@gmail.com">rahul99.engineer@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <a href="tel:+9725209050">+91-9725209050</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <center>all right reserved, Rahul patel ©2025</center>
+        </div>
+    </footer>
+
+    <script>
+        // Cursor Animation
+        const cursor = document.querySelector('.cursor');
+        const trail = document.querySelector('.cursor-trail');
+        let mouseX = 0, mouseY = 0;
+        let posX = 0, posY = 0;
+        let trailX = 0, trailY = 0;
+    
+        const updateCursor = () => {
+            posX += (mouseX - posX) * 0.2; // Faster cursor movement
+            posY += (mouseY - posY) * 0.2; // Faster cursor movement
+            trailX += (mouseX - trailX) * 0.1; // Faster trail movement
+            trailY += (mouseY - trailY) * 0.1; // Faster trail movement
+    
+            cursor.style.transform = `translate(${posX}px, ${posY}px)`;
+            trail.style.transform = `translate(${trailX}px, ${trailY}px)`;
+    
+            requestAnimationFrame(updateCursor);
+        };
+    
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX - cursor.offsetWidth / 2;
+            mouseY = e.clientY - cursor.offsetHeight / 2;
+        });
+    
+        updateCursor();
+    
+        // Star Animation
+        const canvas = document.getElementById('canvas-bg');
+        const ctx = canvas.getContext('2d');
+    
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    
+        class Star {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.opacity = Math.random();
+                this.speed = Math.random() * 0.05 + 0.01;
+            }
+    
+            draw() {
+                // Use theme-based color for stars
+                const theme = document.body.dataset.theme || 'dark';
+                const starColor = theme === 'light' ? `rgba(0, 0, 0, ${this.opacity})` : `rgba(255, 255, 255, ${this.opacity})`;
+                ctx.fillStyle = starColor;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+    
+            update() {
+                this.opacity += this.speed;
+                if (this.opacity > 1 || this.opacity < 0) {
+                    this.speed *= -1;
+                }
+            }
+        }
+    
+        const stars = [];
+        for (let i = 0; i < 200; i++) {
+            stars.push(new Star());
+        }
+    
+        const animateStars = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+            stars.forEach(star => {
+                star.draw();
+                star.update();
+            });
+    
+            requestAnimationFrame(animateStars);
+        };
+    
+        animateStars();
+    
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const setTheme = (theme) => {
+            document.body.dataset.theme = theme;
+            localStorage.setItem('theme', theme);
+            themeToggle.innerHTML = theme === 'light'
+                ? '<i class="fas fa-sun"></i>'
+                : '<i class="fas fa-moon"></i>';
+        };
+    
+        // Mobile Menu
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+        });
+    
+        updateCursor();
+        setTheme(localStorage.getItem('theme') || 'dark');
+    
+        themeToggle.addEventListener('click', () => {
+            const newTheme = document.body.dataset.theme === 'light' ? 'dark' : 'light';
+            setTheme(newTheme);
+        });
+    
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+    
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+    
+                if (targetSection) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const offset = headerHeight; // Use header height as offset
+                    const targetPosition = window.innerWidth > 768 ? targetSection.offsetTop + 50 : targetSection.offsetTop - offset;
+    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth',
+                    });
+    
+                    // Close mobile menu after clicking a link
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    const navLinks = document.querySelector('.nav-links');
+                    if (mobileMenu && mobileMenu.classList.contains('active')) {
+                        mobileMenu.classList.remove('active');
+                        navLinks.classList.remove('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
