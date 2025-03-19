@@ -843,11 +843,9 @@ button[type="submit"]:hover {
 
     .hero-container {
         grid-template-columns: 1fr;
-        /* Stack content vertically */
         gap: 2rem;
-        /* Reduced gap for mobile */
         text-align: center;
-        /* Center-align text */
+        margin-top: 1rem;
     }
 
     .section-title {
@@ -858,7 +856,7 @@ button[type="submit"]:hover {
     .hero-text {
         h1 {
             font-size: 2rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
         h1 span {
             font-size: 2.5rem;
