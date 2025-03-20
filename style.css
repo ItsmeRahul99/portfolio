@@ -286,7 +286,7 @@ section {
     font-family: 'Space Mono', monospace;
     /* Match your body font */
     font-size: 1.1rem;
-    white-space: pre-wrap;
+    white-space: pre-line;
     /* Allow text to wrap */
     word-wrap: break-word;
     /* Break long words if necessary */
@@ -915,9 +915,6 @@ button[type="submit"]:hover {
     .cursor,
     .cursor-trail {
         display: none;
-    }
-    #about pre {
-        white-space: pre-line;
     }
 
     /* Global Adjustments */
