@@ -2,6 +2,22 @@ html {
     scroll-behavior: smooth;
 }
 
+[data-theme="light"] ::selection {
+    background: rgb(198, 73, 73);
+    /* Blue background for selection */
+    color: white;
+    /* White text for selection */
+}
+
+/* Define selection colors for dark theme */
+[data-theme="dark"] ::selection {
+    background: rgb(255, 193, 7);
+    /* Yellow background for selection */
+    color: black;
+    /* Black text for selection */
+}
+
+
 :root {
     --bg-color: #000000;
     --text-color: #ffffff;
@@ -521,14 +537,6 @@ section {
     gap: 3rem;
 }
 
-.skill-item {
-    text-align: center;
-    padding: 2rem;
-    background: var(--card-bg);
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
 .skill-item:hover {
     transform: translateY(-10px);
 }
@@ -599,7 +607,7 @@ section {
 
 .skill-item {
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 0;
     background: var(--card-bg);
     border-radius: 15px;
     border: 2px solid rgba(255, 255, 255, 0.1);
@@ -636,8 +644,114 @@ section {
     color: var(--accent-color);
 }
 
+/* Color definitions for each icon */
+.fab.fa-html5 {
+    color: #e34f26;
+    /* HTML5 orange */
+}
+
+.fab.fa-css3-alt,
+.fab.fa-css3 {
+    color: #1572b6;
+    /* CSS3 blue */
+}
+
+.fab.fa-js {
+    color: #f7df1e;
+    /* JavaScript yellow */
+}
+
+.fab.fa-js-square {
+    color: #007acc;
+    /* TypeScript blue */
+}
+
+.fab.fa-react {
+    color: #61dafb;
+    /* React blue */
+}
+
+.fab.fa-redux {
+    color: #764abc;
+    /* Redux purple */
+}
+
+.fab.fa-bootstrap {
+    color: #563d7c;
+    /* Bootstrap purple */
+}
+
+.fab.fa-github {
+    color: #494949;
+    /* Github dark gray */
+}
+
+.fas.fa-database {
+    color: #448aff;
+    /* Database blue */
+}
+
+.fab.fa-node-js,
+.fab.fa-node {
+    color: #68a063;
+    /* Node.js green */
+}
+
+.fab.fa-figma {
+    color: #a259ff;
+    /* Figma purple */
+}
+
+.fab.fa-sass,
+.fab.fa-scss {
+    color: #cc6699;
+    /* Sass pink */
+}
+
+.fas.fa-network-wired {
+    color: #00bcd4;
+    /* REST API cyan */
+}
+
+.fas.fa-cube {
+    color: #8bc34a;
+    /* Webpack light green */
+}
+
+.fas.fa-vial {
+    color: #ff9800;
+    /* Jest orange */
+}
+
+.fab.fa-git-alt,
+.fab.fa-git {
+    color: #f03c2e;
+    /* Git red */
+}
+
+.fab.fa-aws {
+    color: #ff9900;
+    /* AWS orange */
+}
+
+.fab.fa-npm {
+    color: #cb3837;
+    /* NPM red */
+}
+
+.fas.fa-project-diagram {
+    color: #9c27b0;
+    /* GraphQL purple */
+}
+
+.fab.fa-mongodb {
+    color: #47A248;
+    /* MongoDB green */
+}
+
+
 /* Skill Icons Specific Styling */
-.fa-html5 {
+/* .fa-html5 {
     color: #e34f26;
 }
 
@@ -671,12 +785,12 @@ section {
 
 .fa-js-square {
     color: #3178c6;
-}
+} */
 
 /* TypeScript */
-.fa-css3 {
+/* .fa-css3 {
     color: #38bdf8;
-}
+} */
 
 /* Contact Section */
 .contact-info {
@@ -798,8 +912,12 @@ button[type="submit"]:hover {
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
 
-    .cursor, .cursor-trail {
+    .cursor,
+    .cursor-trail {
         display: none;
+    }
+    #about pre {
+        white-space: pre-line;
     }
 
     /* Global Adjustments */
@@ -845,7 +963,6 @@ button[type="submit"]:hover {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
-        margin-top: 1rem;
     }
 
     .section-title {
@@ -858,17 +975,22 @@ button[type="submit"]:hover {
             font-size: 2rem;
             margin-bottom: 1rem;
         }
+
         h1 span {
             font-size: 2.5rem;
+            margin-bottom: 1rem;
             display: inline-block;
         }
+
         .name-wrapper .symbol:first-child {
             right: -25px;
         }
+
         h2 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
+
         p {
             font-size: 1rem;
             margin-bottom: 1.5rem;
@@ -885,7 +1007,7 @@ button[type="submit"]:hover {
     }
 
     .hero-image {
-        max-width: 225px;
+        max-width: 250px;
         /* Smaller image for mobile */
         margin: 0 auto;
         /* Center the image */
