@@ -466,7 +466,7 @@ section {
 }
 
 .name-wrapper .symbol:first-child {
-    right: 40px;
+    right: -20px;
     /* Position the greater-than symbol */
 }
 
@@ -1148,7 +1148,7 @@ button[type="submit"]:hover {
     }
 
     .name-wrapper .symbol:first-child {
-        right: 20px;
+        right: -45px;
         /* Further adjust position for very small screens */
     }
 
